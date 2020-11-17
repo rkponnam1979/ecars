@@ -26,7 +26,7 @@ export default class LiveData extends LightningElement {
                 this.template.querySelector('div.chart').appendChild(canvas);
                 const ctx = canvas.getContext('2d');
                 this.chart = new window.Chart(ctx, this.chartJsConfig);
-                const ws = new window.WebSocket('wss://example.herokuapp.com');
+                const ws = new window.WebSocket('wss://ecars-rt-dreamtx.herokuapp.com');
                 const that = this;
                 // For the simplicity of this demo we are just listening to the
                 // first car that sends its telemetry data.

@@ -1,0 +1,7 @@
+{
+    "url": "www.google.com",
+    "id": "123456",
+    "toAddress": "stephan.garcia@salesforce.com",
+    "carImage": "https://sfdc-demo.s3-us-west-1.amazonaws.com/ecars/car_white.jpg",
+    "firstName": "Stephan"
+}
