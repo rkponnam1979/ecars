@@ -63,6 +63,7 @@ module.exports = async function (event, context, logger) {
             return { error: 'Failed to send an email', stack: err.stack };
         } else {
             logger.error(err);
+            return { error: err.message, stack: err.stack }
         }
     }
     // Return the qrcode image url

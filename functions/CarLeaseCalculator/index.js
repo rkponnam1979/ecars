@@ -14,8 +14,6 @@ module.exports = function (event, context, logger) {
     let leaseValues = null;
     const payload = event.data;
     try {
-        console.log('starting');
-        console.log(payload);
         // Instanciate the lease calculator function
         const leaseCalculator = new LeaseCalculator();   
              
@@ -31,9 +29,6 @@ module.exports = function (event, context, logger) {
             msrpDiscount: leaseCalculator.getDiscountOffMsrpPercentage(),
             residual: leaseCalculator.getRVValue()
         };
-
-        console.log('lease values: ', leaseValues)
-
     } catch (err) {
         if (err instanceof LeaseCalculationError) {
             return { error: 'Failed to calculate lease', stack: err.stack };
