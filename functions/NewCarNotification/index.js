@@ -62,7 +62,6 @@ module.exports = async function (event, context, logger) {
         } else if (err instanceof SendEmailError) {
             return { error: 'Failed to send an email', stack: err.stack };
         } else {
-            logger.error(err);
             return { error: err.message, stack: err.stack }
         }
     }

@@ -14,7 +14,7 @@ module.exports = function (event, context, logger) {
     let leaseValues = null;
     const payload = event.data;
     try {
-        // Instanciate the lease calculator function
+        // Instantiate the lease calculator function
         const leaseCalculator = new LeaseCalculator();   
              
         // Provide lease details
@@ -35,7 +35,6 @@ module.exports = function (event, context, logger) {
         } else {
             return { error: err.message, stack: err.stack };
         }
-        logger.error(err);
     }
     return leaseValues;
 };
