@@ -32,7 +32,9 @@ module.exports = function (event, context, logger) {
     } catch (err) {
         if (err instanceof LeaseCalculationError) {
             return { error: 'Failed to calculate lease', stack: err.stack };
-        } 
+        } else {
+            return { error: err.message, stack: err.stack };
+        }
         logger.error(err);
     }
     return leaseValues;
