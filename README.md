@@ -107,12 +107,6 @@ The below steps do everything the [Automated Deploy](#automated-deploy) does. It
     $ sfdx force:org:open -u ecars -p /lightning/settings/personal/ResetApiToken/home
     ```
 
-1. (Optional) Activate the `Pulsar_Bold` theme on the `Themes and Branding` page by running the following command:
-
-    ```console
-    $ sfdx force:org:open -u ecars -p /lightning/setup/ThemingAndBranding/home
-    ```
-
 1. Deploy and configure the **Heroku MQTT application**
 
     1. Click the Heroku Deploy Button to deploy the application to Heroku. Provide a unique application name to be used as [MQTT APP NAME] below. Leave all other inputs as the defaults.
@@ -217,6 +211,12 @@ The below steps do everything the [Automated Deploy](#automated-deploy) does. It
         ```console
         $ sfdx force:data:tree:import --plan ./data/data-plan.json
         ```
+    1. (Optional) Activate the `Pulsar_Bold` theme on the `Themes and Branding` page by running the following command:
+
+    ```console
+    $ sfdx force:org:open -u ecars -p /lightning/setup/ThemingAndBranding/home
+    ```
+
 
 1. Now go to [Demo Highlights](#demo-highlights) to learn about what you just deployed and why it's interesting!
 
