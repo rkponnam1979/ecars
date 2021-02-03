@@ -25,7 +25,7 @@ public with sharing class WebPushService {
 
     @InvocableMethod(label='Web Push Method')
     public static void flowInvokedWebPush(List<Id> ids) {
-        System.enqueueJob(new QueuePush());
+        System.enqueueJob(new QueuePush(ids));
     }
 
     public class ServiceInput {
