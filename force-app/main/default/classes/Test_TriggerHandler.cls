@@ -1,13 +1,13 @@
 @isTest
-private class TriggerHandler_Test {
+private class Test_TriggerHandler {
     private static final String TRIGGER_CONTEXT_ERROR = 'Trigger handler called outside of Trigger execution';
 
     private static String lastMethodCalled;
 
-    private static TriggerHandler_Test.TestHandler handler;
+    private static Test_TriggerHandler.TestHandler handler;
 
     static {
-        handler = new TriggerHandler_Test.TestHandler();
+        handler = new Test_TriggerHandler.TestHandler();
         // override its internal trigger detection
         handler.isTriggerExecuting = true;
     }
