@@ -365,31 +365,31 @@ private class Test_TriggerHandler {
 
     private class TestHandler extends TriggerHandler {
         public override void beforeInsert() {
-            TriggerHandler_Test.lastMethodCalled = 'beforeInsert';
+            Test_TriggerHandler.lastMethodCalled = 'beforeInsert';
         }
 
         public override void beforeUpdate() {
-            TriggerHandler_Test.lastMethodCalled = 'beforeUpdate';
+            Test_TriggerHandler.lastMethodCalled = 'beforeUpdate';
         }
 
         public override void beforeDelete() {
-            TriggerHandler_Test.lastMethodCalled = 'beforeDelete';
+            Test_TriggerHandler.lastMethodCalled = 'beforeDelete';
         }
 
         public override void afterInsert() {
-            TriggerHandler_Test.lastMethodCalled = 'afterInsert';
+            Test_TriggerHandler.lastMethodCalled = 'afterInsert';
         }
 
         public override void afterUpdate() {
-            TriggerHandler_Test.lastMethodCalled = 'afterUpdate';
+            Test_TriggerHandler.lastMethodCalled = 'afterUpdate';
         }
 
         public override void afterDelete() {
-            TriggerHandler_Test.lastMethodCalled = 'afterDelete';
+            Test_TriggerHandler.lastMethodCalled = 'afterDelete';
         }
 
         public override void afterUndelete() {
-            TriggerHandler_Test.lastMethodCalled = 'afterUndelete';
+            Test_TriggerHandler.lastMethodCalled = 'afterUndelete';
         }
     }
 }
