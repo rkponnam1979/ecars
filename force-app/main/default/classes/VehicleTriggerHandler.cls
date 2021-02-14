@@ -22,7 +22,7 @@ public inherited sharing class VehicleTriggerHandler extends TriggerHandler {
                     task.Subject =
                         'The vehicle ' +
                         vehicle.Model__c +
-                        ' is sold. Please call your Sales Director to let them know.';
+                        ' is sold. Call your Sales Director';
                     newTasks.add(task);
                 }
             }
