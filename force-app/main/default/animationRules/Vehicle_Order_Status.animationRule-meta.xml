@@ -8,5 +8,6 @@
     <recordTypeName>__MASTER__</recordTypeName>
     <sobjectType>Vehicle_Order__c</sobjectType>
     <targetField>Status__c</targetField>
+    // testing
     <targetFieldChangeToValues>Approved</targetFieldChangeToValues>
 </AnimationRule>
