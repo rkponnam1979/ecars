@@ -39,7 +39,7 @@
     },
     "devDependencies": {
         "jest": "^27.5.1",
-        "lerna": "^4.0.0",
+        "lerna": "^6.4.1",
         "rimraf": "^3.0.2"
     }
 }
